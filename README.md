@@ -64,6 +64,16 @@ source("scripts/03_endothelial_reclustering_annotation.R")
 source("scripts/04_vegfr_activation_visualization.R")
 ```
 
+
+
+## Endothelial-only RPCA integration workflow
+
+This repository also includes an endothelial-only RPCA integration workflow in `scripts/05_endothelial_RPCA_integration.R`.
+
+After whole-lung lineage annotation, endothelial cells are subsetted, split by sample, normalized independently, integrated using reciprocal PCA, reclustered, and annotated into endothelial subtypes including lymphatic, aerocyte-like, general capillary, venous, and arterial endothelial populations.
+
+This workflow is useful for evaluating endothelial heterogeneity after reducing sample-level batch effects and for visualizing VEGFR/NRP/PTP expression across endothelial subtypes and Control/COVID groups.
+
 ## Outputs
 
 The workflow generates:
